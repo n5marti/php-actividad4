@@ -1,7 +1,11 @@
 <?php
 
-/*Merge Sort divide el array en dos mitades, las ordena recursivamente 
-y luego combina las mitades ordenadas*/
+/*
+2.	Problema de Ordenar Lista con Merge Sort: Implementa una función que ordene una lista de palabras 
+alfabéticamente utilizando el algoritmo Merge Sort. Muestra la lista antes y después de aplicar el algoritmo.
+
+Merge Sort divide el array en dos mitades, las ordena recursivamente y luego combina las mitades ordenadas
+*/
 
 function mergeSort($array) {
     if (count($array) <= 1) {
@@ -35,4 +39,9 @@ echo "Lista original: " . implode(", ", $words) . "\n";
 
 $sortedWords = mergeSort($words);
 echo "Lista ordenada (alfabéticamente): " . implode(", ", $sortedWords) . "\n";
+
+/*
+Lista original: manzana, uva, limón, naranja, pera, uva
+Lista ordenada (alfabéticamente): limón, manzana, naranja, pera, uva, uva
+*/
 ?>
